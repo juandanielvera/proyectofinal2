@@ -35,5 +35,8 @@ public class Product {
     public void setPrice(Double price) {
         Price = price;
     }
+    public void AddProduct(){
+        
+    }
   
 }

@@ -38,17 +38,13 @@ public class Customer extends Person{
     }
 
     public Order PlaceOrder(List<Product> ProductsList){
-        Order order= new Order(Name, null, LastName);
-
-        for (Product product: ProductsList) {
-            Order.AddProduct(product);
+        Order order = new Order(Name, null, LastName, ProductsList);
+        for (Product product : ProductsList) {
+            order.AddProduct(product);
         }
-
         System.out.println("order placed with " + ProductsList.size() + " products.");
         return order;
     }
     
-
-
 }
 
