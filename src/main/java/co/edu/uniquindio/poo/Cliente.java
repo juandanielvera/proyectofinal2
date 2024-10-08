@@ -5,10 +5,27 @@ public class Cliente{
     String Name;
     String LastName;
 
-    public Cliente(String Name, String LastName){
-
-        this.Name = Name;
-        this.LastNAme = LastNAme;
+    public Cliente(String name, String lastName) {
+        Name = name;
+        LastName = lastName;
     }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getLastName() {
+        return LastName;
+    }
+
+    public void setLastName(String lastName) {
+        LastName = lastName;
+    }
+
+    
 }
 
