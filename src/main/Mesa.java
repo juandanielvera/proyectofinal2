@@ -4,8 +4,17 @@ public class Mesa{
 
     int Number;
 
-    public Mesa (int Number){
-
-        this.Number = Number;
+    public int getNumber() {
+        return Number;
     }
+
+    public void setNumber(int number) {
+        Number = number;
+    }
+
+    public Mesa(int number) {
+        Number = number;
+    }
+
+    
 }

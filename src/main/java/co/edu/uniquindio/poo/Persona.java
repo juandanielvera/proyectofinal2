@@ -1,8 +1,10 @@
 package co.edu.uniquindio.poo;
 
 public class Persona {
+   
     public  String Nombre;
     public  int Teléfono;
+
     public Persona(String nombre, int teléfono) {
         Nombre = nombre;
         Teléfono = teléfono;
