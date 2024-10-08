@@ -7,7 +7,8 @@ public class Cashier extends Employee{
         
     }
 
-    public void ManageInvoice(){
+    public void PrintInvoice(Order order){
+        System.out.println("printing invoice");
 
     }
     

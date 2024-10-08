@@ -1,5 +1,8 @@
 package co.edu.uniquindio.poo;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
 public class Customer extends Person{
 
     private String IDCustomer;
@@ -27,12 +30,25 @@ public class Customer extends Person{
         this.Email = email;
     }   
 
-    public void MakeReservation(){
-
+    public Reservation MakeReservation(String iDReservation, LocalDateTime DateTime, int pax){
+        Reservation Reservation= new Reservation(iDReservation, DateTime, pax);
+        System.out.println("Reservation made for  " + pax + " people at  " + DateTime + ".");
+         return Reservation;
+        
     }
 
-    public void PlaceOrder(){
+    public Order PlaceOrder(List<Product> ProductsList){
+        Order order= new Order(Name, null, LastName);
 
+        for (Product product: ProductsList) {
+            Order.AddProduct(product);
+        }
+
+        System.out.println("order placed with " + ProductsList.size() + " products.");
+        return order;
     }
+    
+
+
 }
 
